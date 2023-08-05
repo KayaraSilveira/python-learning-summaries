@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 Informações Gerais</title>
+    <link rel="shortcut icon" href="images/snake.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/9e72dca8a0.js" crossorigin="anonymous"></script>
+</head>
+
+<body onload="listPages('1 Informações Gerais')">
+    <!--Página 1-->
+    <div class="page">
+        <div class="container">
+            <header>
+                <h1>Python <img src="images/snake-48x48.png" alt="Cobrinha"></h1>
+                <p>
+                    If the implementation is <span class="green-highlight">hard</span> to explain, it's a <span
+                        class="green-highlight">bad</span> idea.<br>
+                    If the implementation is <span class="green-highlight">easy</span> to explain, it may be a <span
+                        class="green-highlight">good</span> idea.
+                </p>
+            </header>
+
+            <div class="two-column">
+                <div class="column">
+                    <section>
+                        <h2>Informações Gerais</h2>
+                        <ul>
+                            <li>Tipagem dinâmica</li>
+                            <li>Linguagem interpretada</li>
+                            <li>Multiparadigma</li>
+                            <li>Sem indentação o código não roda</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>Tipos de dados</h2>
+                        <div class="item">
+                            <span class="arrow">↳</span>
+                            <h3>Bool</h3>
+                            <p>
+                                Para valores booleanos (True/False)<br>
+                                Exemplo:
+                            </p>
+                            <div class="code">
+                                b<span class="code-atrib"> = </span><span class="code-value">True</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <span class="arrow">↳</span>
+                            <h3>Int</h3>
+                            <p>
+                                Para valores numericos inteiros (..., -1, 0, 1, 2, 3, ..., 12, 13, ...)<br>
+                                Exemplo:
+                            </p>
+                            <div class="code">
+                                i<span class="code-atrib"> = </span><span class="code-value">13</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <span class="arrow">↳</span>
+                            <h3>Float</h3>
+                            <p>
+                                Para valores numericos de ponto flutuante (1.25, 2.0, -9.3, ...)<br>
+                                Exemplo:
+                            </p>
+                            <div class="code">
+                                f<span class="code-atrib"> = </span><span class="code-value">62.285</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <span class="arrow">↳</span>
+                            <h3>List</h3>
+                            <p>
+                                Para uma sequência de dados. Os dados na lista não precisam ser de mesmo tipo
+                                <span class="obs">array != list</span><br>
+                                Exemplo:
+                            </p>
+                            <div class="code">
+                                squares<span class="code-atrib"> = </span><span class="code-value">[1, 4, 9, 16,
+                                    25]</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <span class="arrow">↳</span>
+                            <h3>Tuple</h3>
+                            <p>
+                                Para uma sequência de dados. Diferente da list uma tupla é imutável, isto é, depois de
+                                criada não podemos inserir nem remover itens.<br>
+                                Exemplo:
+                            </p>
+                            <div class="code">
+                                t<span class="code-atrib"> = </span><span class="code-value">(12345, 54321,
+                                    'hello!')</span>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="column">
+                    <section>
+                        <div class="item" style="margin-top: 30px">
+                            <span class="arrow">↳</span>
+                            <h3>Str</h3>
+                            <p>
+                                Para uma string. As strings são iteráveis e é
+                                possível acessar posições através do índice<br>
+                                Exemplo:
+                            </p>
+                            <div class="code">
+                                word<span class="code-atrib"> = </span><span class="code-value">'Python'</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <span class="arrow">↳</span>
+                            <h3>Set e Frozenset</h3>
+                            <p>
+                                Para um conjunto de dados não duplicados,
+                                onde a ordem não é relevante.
+                                São iteráveis mas não permitem que seus elementos sejam
+                                acessados através de um índice. Permitem operações entre conjuntos como união e
+                                intersecção.<br>
+                                A diferença entre o set e o frozenset é que o set é mutável, já o
+                                frozenset é imutável. Ambos podem ser declarados porém é mais comum serem gerados a
+                                partir de
+                                uma list através da função set() ou frozenset()<br>
+                                Exemplo:
+                            </p>
+                            <div class="code">
+                                s<span class="code-atrib"> = </span><span class="code-value">{1, 2, 3, 7, 22}</span>
+                            </div>
+                            <div class="code">
+                                s<span class="code-atrib"> = </span><span class="code-value">set([1, 22, 2, 3, 3, 7, 3,
+                                    1])</span>
+                            </div>
+                            <p><span class="obs">Os dois códigos geram o mesmo conjunto3</span><br></p>
+                        </div>
+                        <div class="item">
+                            <span class="arrow">↳</span>
+                            <h3>Dict</h3>
+                            <p>
+                                Para uma sequência de dados com uma dupla de chave e valor, onde é
+                                possível acessar um valor através da chave.<br>
+                                Exemplo:
+                            </p>
+                            <div class="code">
+                                d<span class="code-atrib"> = </span><span class="code-value">{'gatos': 5, 'cachorros':
+                                    3, 'peixes': 1}</span>
+                            </div>
+                            <a href="" target="_blank"><i class="fas fa-link"></i> Mais exemplos e usos</a>
+                        </div>
+                    </section>
+                    <section>
+                        <h2>Operadores</h2>
+                        <div class="item">
+                            <span class="arrow">↳</span>
+                            <h3>Operadores de Comparação</h3>
+                            <p>Possui os operadores de sempre ↝ ==, &lt, >, &gt=, >=</p>
+                            <p class="obs">O operador == além do valor testa também o tipo da variável</p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Página 2-->
+    <div class="page">
+        <div class="container">
+            <div class="two-column">
+                <div class="column">
+                    <section>
+                        <div class="item" style="margin-top: 35px;">
+                            <span class="arrow">↳</span>
+                            <h3>Operadores Lógicos</h3>
+                            <p>Possui os operadores and, or e not</p>
+                        </div>
+                        <div class="item">
+                            <span class="arrow">↳</span>
+                            <h3>Operadores de Identidade</h3>
+                            <p>
+                                Estes operadores são utilizados para verificar se os objetos testados referenciam o
+                                mesmo objeto
+                            </p>
+                            <ul>
+                                <li>is ↝ referenciam o mesmo objeto</li>
+                                <li>not is ↝ não referenciam o mesmo objeto</li>
+                            </ul>
+                            <p>Exemplo:</p>
+                            <div class="code">
+                                x<span class="code-op"> is </span> y
+                            </div>
+                            <p class="obs">
+                                Quando o operador == é usado em dois objetos de uma classe
+                                o operador utilizado é na verdade o is, por isso só irá retornar True
+                                se os dois objetos estiverem na mesma posição de memória,
+                                ou seja, se forem o mesmo objeto.
+                            </p>
+                        </div>
+                        <div class="item">
+                            <span class="arrow">↳</span>
+                            <h3>Operadores de Associação</h3>
+                            <p>
+                                Estes operadores servem para verificar se determinado objeto está associado ou pertence
+                                a determinada estrutura de dados
+                            </p>
+                            <ul>
+                                <li>in ↝ pertence</li>
+                                <li>not in ↝ não pertence</li>
+                            </ul>
+                            <p>Exemplos:</p>
+                            <div class="code">
+                                1<span class="code-op"> in </span> [0, 1, 2, 3]
+                            </div>
+                            <div class="code">
+                                4<span class="code-op"> not in </span> [0, 1, 2, 3]
+                            </div>
+                        </div>
+                        <div class="item">
+                            <span class="arrow">↳</span>
+                            <h3>Operadores de Aritméticos</h3>
+                            <p>
+                                Os operadores aritméticos em python seguem o mesmo padrão que em outras linguagens,
+                                mas é importante citar algumas características relevantes:
+                            </p>
+                            <ul>
+                                <li>/ ↝ Divide dois números resultando sempre em um float</li>
+                                <li>// ↝ Divide dois números mas o resultado respeita o tipo do dado</li>
+                                <li>** ↝ Exponenciação</li>
+                                <li>Não possui os operadores '++' e '–' mas possui '+='' e '-='</li>
+                            </ul>
+                        </div>
+                        <div class="item">
+                            <span class="arrow">↳</span>
+                            <h3>Operadores de Sequências</h3>
+                            <p>
+                                Estes são os operadores mais comuns para operações com sequências:
+                            </p>
+                            <ul>
+                                <li>+ ↝ Concatenação</li>
+                                <li>s * n ↝ Equivalente a adicionar s a si mesmo n vezes</li>
+                                <li>s[i:j] ↝ Fatia de s de i até j</li>
+                                <li>s[i:j:k] ↝ Fatia de s de i até j com step k</li>
+                                <li>min() ↝ Menor item</li>
+                                <li>max() ↝ Maior item</li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+                <div class="column">
+                    <section>
+                        <h2>Controles de fluxo</h2>
+                        <div class="item">
+                            <span class="arrow">↳</span>
+                            <h3>If</h3>
+                            <div class="code">
+                                <span class="code-atrib"> if </span> (x <span class="code-atrib">></span> <span
+                                    class="code-value"> 0</span>):<br>
+                                &ensp;&ensp;print(<span class="code-value">"positivo"</span>)<br><br>
+                                <span class="code-atrib"> elif </span> (x <span class="code-atrib">&lt;</span> <span
+                                    class="code-value"> 0</span>):<br>
+                                &ensp;&ensp;print(<span class="code-value">"negativo"</span>)<br><br>
+                                <span class="code-atrib"> else </span>:<br>
+                                &ensp;&ensp;print(<span class="code-value">"zero"</span>)
+                            </div>
+                            <p>
+                                Pode haver zero ou mais partes elif, e a parte else é opcional.
+                                A palavra-chave elif é uma abreviação para else if, e é útil para
+                                evitar indentação excessiva. Uma sequência if … elif … elif …
+                                substitui os comandos switch ou case, encontrados em outras linguagens.
+                            </p>
+                        </div>
+                        <div class="item">
+                            <span class="arrow">↳</span>
+                            <h3>For</h3>
+                            <p>
+                                O comando for do Python itera sobre os itens de qualquer sequência, na ordem que
+                                aparecem.
+                            </p>
+                            <div class="code">
+                                <span class="code-atrib"> for </span> w <span class="code-atrib">in</span> words:<br>
+                                &ensp;&ensp;print(w)
+                            </div>
+                            <div class="code">
+                                <span class="code-atrib"> for </span> i <span class="code-atrib">in</span> range(<span
+                                    class="code-value">5</span>):<br>
+                                &ensp;&ensp;print(i)
+                            </div>
+                        </div>
+                        <div class="item">
+                            <span class="arrow">↳</span>
+                            <h3>While</h3>
+                            <p>
+                                No Python também temos o comando while para repetições, porém não há o comando do while.
+                            </p>
+                            <div class="code">
+                                <span class="code-atrib"> while </span>( i <span class="code-atrib">></span> <span
+                                    class="code-value"> 0</span>):<br>
+                                &ensp;&ensp;print(i)<br>
+                                &ensp;&ensp;i += <span class="code-value">1</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <span class="arrow">↳</span>
+                            <h3>Break e Continue</h3>
+                            <p>
+                                O comando <span class="orange-highlight">break</span> sai imediatamente do laço
+                                de repetição mais interno, seja for ou while.
+                            </p>
+                            <p>
+                                Já o comando <span class="orange-highlight">continue</span> para a execução
+                                da iteração no atual momento e passa para a próxima iteração do laço.
+                            </p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page page-list">
+        <div class="container">
+            <h1>Veja também:</h1>
+            <div class="two-column">
+                <div id="page-list-left" class="column">
+                </div>
+                <div id="page-list-right" class="column">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
